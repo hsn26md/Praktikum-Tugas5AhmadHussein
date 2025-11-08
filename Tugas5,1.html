@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 5.1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .browser {
+            width: 100%;
+            max-width: 800px;
+            background: white;
+            border: 3px solid #dfdfdf;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .browser-header {
+            background: #e8e8e8;
+            padding: 12px 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 2px solid #9e9e9e;
+        }
+
+        .browser-buttons {
+            display: flex;
+            gap: 6px;
+        }
+
+        .browser-button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 1px solid #999;
+        }
+
+        .btn-back {
+            background: #ccc;
+        }
+
+        .btn-forward {
+            background: #ccc;
+        }
+
+        .btn-reload {
+            background: #ccc;
+        }
+
+        .address-bar {
+            flex: 1;
+            background: white;
+            border: 1px solid #999;
+            border-radius: 4px;
+            padding: 6px 12px;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .browser-content {
+            display: flex;
+            gap: 15px;
+            padding: 30px;
+            background: white;
+            min-height: 400px;
+        }
+
+        .column {
+            flex: 1;
+            border: 2px solid #666;
+            border-radius: 4px;
+            min-height: 350px;
+        }
+
+        .column-yellow {
+            background: #FFE34D;
+        }
+
+        .column-orange {
+            background: #FF6B3D;
+        }
+
+        .column-green {
+            background: #B4DB8E;
+        }
+
+        .column-blue {
+            background: #0ac8fd;
+        }
+    </style>
+</head>
+<body>
+    <div class="browser">
+        <div class="browser-header">
+            <div class="browser-buttons">
+                <div class="browser-button btn-back"></div>
+                <div class="browser-button btn-forward"></div>
+                <div class="browser-button btn-reload"></div>
+            </div>
+            <div class="address-bar">http://short.com</div>
+        </div>
+        <div class="browser-content">
+            <div class="column column-yellow"></div>
+            <div class="column column-orange"></div>
+            <div class="column column-green"></div>
+            <div class="column column-blue"></div>
+        </div>
+    </div>
+</body>
+</html>
